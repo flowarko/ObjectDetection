@@ -16,12 +16,13 @@ class ObjectDetection:
         self.path = None
 
     def downloadResize(self, url, width=256, height=256):
-        """
+        """Image will be downloaded and resized
+        It will be saved locally in tmp folder
 
-        :param url:
-        :param width:
-        :param height:
-        :return:
+        :param url: Url of image
+        :param width: Custom width (default=256)
+        :param height: Custom height (default=256)
+        :return: filename as string
         """
         _, filename = tempfile.mkstemp(suffix=".jpg")
         response = urlopen(url)

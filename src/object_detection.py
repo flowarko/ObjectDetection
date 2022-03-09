@@ -134,7 +134,7 @@ class ObjectDetection:
 
         return image_with_boxes
     
-    def saveImage(self, image):
+    def saveImage(self, image_with_boxes):
         image = Image.fromarray(image_with_boxes, "RGB")
         image.save(self.path[:-4] + "_od.jpg", format="JPEG", quality=90)
     

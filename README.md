@@ -1,5 +1,5 @@
 # ObjectDetection
-If you run this on Google Colab:
+If you run this in Google Colab:
 - Run "Download source files"
 
 If you run this local:
